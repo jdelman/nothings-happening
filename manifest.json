@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Nothing's Happening",
+  "description": "A Chrome extension to remove the `What's happening` section on Twitter.com",
+  "content_scripts": [
+    {
+      "matches": ["https://*.twitter.com/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "version": "1.0"
+}
